@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MainPage</title>
+       <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+    <link rel="stylesheet" href="asset/css/main-style.css">
+    <script src="asset/js/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+<header>
+    <img src="asset/img/logo.png" width="150">
+    <div class="float-Left">
+        <div class="search">
+            <div>
+                <form>
+                    <input type="text" placeholder="search..." class="search-INP">
+                    <button type="button" class="search-BTN"><i class="material-icons">
+                        search
+                    </i></button>
+                </form>
+            </div>
+        </div>
+        <div class="shopped">
+            <i class="material-icons">
+                local_grocery_store
+            </i><b> سبد کالا...</b>
+        </div>
+    </div>
+</header>
+<nav class="nav">
+    <ul>
+        <li><a><i class="material-icons">
+            arrow_drop_down
+        </i>کالای دیجیتال</a></li>
+        <li><a><i class="material-icons">
+            arrow_drop_down
+        </i>لوازم خانگی</a></li>
+        <li><a><i class="material-icons">
+            arrow_drop_down
+        </i>لوازم اداری</a></li>
+        <li><a class="login-box-open" id="loginOpener">Login/Reg</a></li>
+        
+    </ul>
+
+</nav>
+<div>
+    <div class="menu">
+        <ul>
+            <li><a>لوازم خانگی</a></li>
+            <li><a href="index2.html">لوازم دیجیتال</a></li>
+            <li><a>پوشاک</a></li>
+            <li><a>لوازم ورزشی</a></li>
+            <li><a>لوازم و التحریر</a></li>
+            <li><a>ابزار اداری</a></li>
+            <li><a>لوازم بهداشتی</a></li>
+            <li><a>لوازم کودک</a></li>
+            <li><a>متفرقه</a></li>
+        </ul>
+    </div>
+
+
+
+</div>
+<div class="mainRow float-Left height-1000 slider slide1" style="margin-top: 20px">
+
+</div>
+
+
+<div class="cl-both"></div>
+<footer>
+    copy-right &copy;
+</footer>
+<div class="login-box" id="lgb">
+
+    <div class="header">
+
+        <span class="loginCloser" style="float: left; cursor: pointer">x</span>
+        <div style="clear: both"></div>
+    </div>
+    <div class="body">
+
+    </div>
+
+</div>
+
+<script type="text/javascript">
+    setInterval(function () {
+        if ($(".slider").hasClass("slide1")) {
+            $(".slider").removeClass("slide1");
+            $(".slider").addClass("slide2");
+
+        }
+        else if ($(".slider").hasClass("slide2")) {
+            $(".slider").removeClass("slide2");
+            $(".slider").addClass("slide3");
+        }
+        else if ($(".slider").hasClass("slide3")){
+            $(".slider").removeClass("slide3");
+            $(".slider").addClass("slide1");
+        }
+    },2000)
+
+    $('.loginCloser').click(function () {
+        $('#lgb').removeClass("login-box-open");
+    });
+
+    $('#loginOpener').click(function () {
+        $('#lgb').toggleClass("login-box-open");
+    });
+
+    $('#loginBtn').click(function () {
+        $('#lgb').toggleClass("login-box-open");
+
+
+        var u = $('#username').val();
+        var p = $('#password').val();
+
+
+        $('.login-box .body').html(u + " " + p)
+
+
+    });
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+    <link rel="stylesheet" href="asset/css/main-style.css">
+    <script src="asset/js/jquery-3.4.1.min.js"></script>
+</head>
+</head>
+<body>
+<header>
+    <img src="asset/img/logo.png" width="150">
+    <div class="float-Left">
+        <div class="search">
+            <div>
+                <form>
+                    <input type="text" placeholder="search..." class="search-INP">
+                    <button type="button" class="search-BTN"><i class="material-icons">
+                        search
+                    </i></button>
+                </form>
+            </div>
+        </div>
+        <div class="shopped">
+            <i class="material-icons">
+                local_grocery_store
+            </i><b>سبد کالا...</b>
+        </div>
+    </div>
+</header>
+<nav class="nav">
+    <ul>
+        <li><a><i class="material-icons">
+            arrow_drop_down
+        </i>کالای دیجیتال</a></li>
+        <li><a><i class="material-icons">
+            arrow_drop_down
+        </i>لوازم خانگی</a></li>
+        <li><a><i class="material-icons">
+            arrow_drop_down
+        </i>لوازم اداری</a></li>
+        <li><a>Login/Reg</a></li>
+    </ul>
+</nav>
+<div class="main">
+    <div class="row height-280 row-shadow">
+        <div class="column col-4 float-right height-280 margin-none">
+            <div  class="col-12">
+                <img src="asset/img/asrockmb.png" width="100%" id="mainimg">
+            </div>
+            <div  class="slide-show">
+                <img src="asset/img/asrockmb.png" width="25%" class="float-right onhover" style="margin-left:20px;" id="img1">
+                <img src="asset/img/asrockmb2.png" width="25%" class="float-right onhover" style="margin-left:20px;" id="img2">
+                <img src="asset/img/asrockmb3.png" width="25%" class="float-right onhover" id="img3">
+
+            </div>
+        </div>
+        <div class="column col-8 float-Left height-280 align-right margin-none pad-20">
+            نام کالا : مادر برد ASrock
+            <br>
+            مدل : Z390
+            <br>
+            <span class="line-trough">قیمت : 12/000/000 تومان
+            </span>
+            <br>
+            <h3 style="color: green">حراج 50% : 6/000/000 تومان</h3><br><br>
+
+
+<div class="shop-btn"><i class="material-icons">
+    add_shopping_cart
+</i>    <span>خرید</span></div>
+        </div>
+
+    </div>
+    <div class="row height-280 row-shadow ">
+        <nav class="tab col-12">
+            <ul>
+                <li><a class="info">مشخصات</a>
+
+                </li>
+                <li><a class="nazar">نظرات کاربران</a>
+
+                </li>
+                <li><a class="moghaiese">مقایسه</a>
+
+                </li>
+                <li><a class="question">سوال</a>
+
+                </li>
+            </ul>
+            <div class="cl-both"></div>
+            <div class="tab-box">
+
+            </div>
+            <script type="text/javascript">
+    $('#img1').hover(function () {
+        $('#mainimg').attr('src','asset/img/asrockmb.png');
+
+    })
+    $('#img2').hover(function () {
+        $('#mainimg').attr('src','asset/img/asrockmb2.png');
+
+    })
+    $('#img3').hover(function () {
+        $('#mainimg').attr('src','asset/img/asrockmb3.png');
+
+
+    })
+
+            </script>
+        </nav>
+    </div>
+</div>
+<footer>
+    copy-right &copy;
+</footer>
+</body>
+</html>
